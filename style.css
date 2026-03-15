@@ -1,0 +1,112 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background-size:cover;
+background-position:center;
+transition:0.5s;
+}
+
+.weather-bg{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+overflow:hidden;
+}
+
+/* UI */
+
+.container{
+text-align:center;
+color:white;
+}
+
+h1{
+margin-bottom:20px;
+}
+
+.search-box{
+margin-bottom:20px;
+}
+
+.search-box input{
+padding:10px;
+border:none;
+border-radius:20px;
+width:200px;
+outline:none;
+}
+
+.search-box button{
+padding:10px 20px;
+border:none;
+border-radius:20px;
+background:white;
+cursor:pointer;
+font-weight:600;
+}
+
+.card{
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:20px;
+width:320px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.card img{
+width:90px;
+}
+
+#temp{
+font-size:42px;
+margin:10px 0;
+}
+
+.details{
+display:flex;
+justify-content:space-between;
+margin-top:20px;
+}
+
+.box{
+background:rgba(255,255,255,0.2);
+padding:10px;
+border-radius:10px;
+width:80px;
+}
+
+.box p{
+font-size:12px;
+}
+
+.box span{
+font-weight:700;
+font-size:16px;
+}
+
+/* AQI colors */
+
+.aqi-good{
+color:#00e400;
+}
+
+.aqi-moderate{
+color:#ffd700;
+}
+
+.aqi-poor{
+color:#ff0000;
+}
